@@ -1,0 +1,218 @@
+<html>
+	<style>
+		.eusou { width: 420px; height: 315px; background-color: darkgray; }
+		.olouco { width: 400px; height: auto; font-family: Courier New, fixed; font-size: 20px;color: black; text-align: center; text-transform: uppercase; }
+		.emteconhecer,.aseudispor { width: 200px; height: 275px; background-color: blue; padding: 0px 5px 5px 5px; font-size: 13px; text-align: justify; }
+
+		input { color: black; }
+		button { color: black; }
+	</style>
+
+	<div class="eusou">
+		<div class="olouco">
+			O que o Louco tem a te dizer?
+		</div>
+		<div class="muitoprazer">
+			<table><tr>
+				<td>
+					<div class="emteconhecer">
+
+						Concentre-se na questão que te aflige como um todo, como se você estivesse explicando para um amigo que nunca tomou conhecimento do que se passa. 
+
+						Apresente-se e clique quando sentir que o Louco entendeu a sua questão.
+						<br><br>
+                      .
+
+					</div>
+				</td><td>
+					<div class="aseudispor">
+                    	<center>
+	                        <input placeholder="Qual seu nome?">
+	                        <button>Clique Aqui</button>
+                    	</center>
+                    	<br>
+
+						<div id="oLoucoDisse"></div>
+
+						<script>
+		var conselhos = [
+			{
+				oLouco: "O primeiro conselho é grátis."
+			},
+			{
+				oLouco: "Cuidado com o que os espelhos refletem."
+			},
+			{
+				oLouco: "A necessidade é a mãe da engenhosidade."
+			},
+			{
+				oLouco: "Troque a sua audiência, amigo!"
+			},
+			{
+				oLouco: "Sorria!"
+			},
+			{
+				oLouco: "Sempre vai haver algum vilarejo sem música."
+			},
+			{
+				oLouco: "Já sei! Darei notícias em breve."
+			},
+			{
+				oLouco: "Um cachorro que late é uma boa companhia."
+			},
+			{
+				oLouco: "Deixe-me mostrar uma coisa..."
+			},
+			{
+				oLouco: "Oh! Que mal educado! Tente de novo."
+			},
+			{
+				oLouco: "Pé no chão ou pé na estrada."
+			},
+			{
+				oLouco: "Consulte novamente em instantes."
+			},
+			{
+				oLouco: "Carregue apenas o necessário."
+			},
+			{
+				oLouco: "Divirta-se!"
+			},
+			{
+				oLouco: "Aproveite o dia."
+			},
+			{
+				oLouco: "É normal alguém não sorrir. Não tem problema."
+			},
+			{
+				oLouco: "Leve um casaco, cuidado com o frio."
+			},
+			{
+				oLouco: "Ainda não é a hora da sobremesa."
+			},
+			{
+				oLouco: "Você tem certeza?"
+			},
+			{
+				oLouco: "Sempre ensaie antes de ir a público."
+			},
+			{
+				oLouco: "O Louco serve."
+			},
+			{
+				oLouco: "Conselho bom é conselho pago, foi o que me disseram."
+			},
+			{
+				oLouco: "Está certo. Continue em frente."
+			},
+			{
+				oLouco: "Sempre sobra para os Loucos mesmo."
+			},
+			{
+				oLouco: "... E o Louco sou eu!"
+			},
+			{
+				oLouco: "Às vezes é complicado mesmo."
+			},
+			{
+				oLouco: "Mate-os de rir!"
+			},
+			{
+				oLouco: "Não minta para o seu Rei."
+			},
+			{
+				oLouco: "Um bom par de sapatos ajuda na caminhada."
+			},
+			{
+				oLouco: "Seja feliz."
+			},
+			{
+				oLouco: "Lute pelo seu Rei!"
+			},
+			{
+				oLouco: "Finja o suficiente para acreditar."
+			},
+			{
+				oLouco: "É normal ter algumas cicatrizes."
+			},
+			{
+				oLouco: "Largue a mão."
+			},
+			{
+				oLouco: "Eu já vi esse truque antes."
+			},
+			{
+				oLouco: "Promoção? ‘Conselheiro’ soa bem."
+			},
+			{
+				oLouco: "Pé calejado não erra estrada velha."
+			},
+			{
+				oLouco: "Cale-se!"
+			},
+			{
+				oLouco: "Um porrete serve para bater e para apanhar."
+			},
+			{
+				oLouco: "As frutas mais doces pegam sol."
+			},
+			{
+				oLouco: "Confie mais em si do que outros imaginam que você confie."
+			},
+			{
+				oLouco: "Sirva-se."
+			},
+			{
+				oLouco: "Se calado, todo Louco passa por são."
+			},
+			{
+				oLouco: "Quero uma audiência maior!"
+			},
+			{
+				oLouco: "Só mais essa vez, ok?"
+			},
+			{
+				oLouco: "Estrada velha! Quero novidades!"
+			},
+			{
+				oLouco: "Não minta para si."
+			},
+			{
+				oLouco: "Só um Louco serve dois reis."
+			},
+			{
+				oLouco: "Chute algumas bundas!"
+			},
+			{
+				oLouco: "Cuidado, alguém nos observa."
+			},
+			{
+				oLouco: "Descansar é preciso."
+			},
+			{
+				oLouco: "Só você manda em você."
+			},
+			{
+				oLouco: "Depois do sucesso, não esqueça suas raízes." 
+			},
+			{
+				oLouco: "Parece improvável."
+			}
+		];
+
+		function oLoucoDiz() { 
+          	var segredo = conselhos[Math.floor(Math.random() * conselhos.length)].oLouco;
+			document.getElementById("oLoucoDisse").innerHTML("O Louco diz: <br>" + segredo);
+		}
+
+		var button = document.querySelector("button");
+		button.onclick = oLoucoDiz;
+
+						</script>
+					</div>
+				</td>
+			</tr></table>
+		</div>	
+	</div>
+
+</html>
