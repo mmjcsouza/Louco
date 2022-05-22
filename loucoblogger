@@ -202,7 +202,7 @@
 
 		function oLoucoDiz() { 
           	var segredo = conselhos[Math.floor(Math.random() * conselhos.length)].oLouco;
-			document.getElementById("oLoucoDisse").innerHTML("O Louco diz: <br>" + segredo);
+			document.getElementById("oLoucoDisse").innerHTML = segredo;
 		}
 
 		var button = document.querySelector("button");
